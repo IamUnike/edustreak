@@ -1,13 +1,1017 @@
-body {
+/* GenERAL STYLING */
+*{
+  padding: 0;
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+  box-sizing: border-box;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+html{
+  scroll-behavior:smooth;
+}
+
+body{
+  overflow-x: hidden;
+  background-color: white;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 15px;
+}
+
+img{
+  width: 100%;
+  height: 100%;
+}
+
+li{
+  list-style: none;
+  cursor: pointer;
+}
+
+
+p{
+  font-family: Arial, Helvetica, sans-serif;
+  margin: 1.5rem 0;
+  line-height: 1.5rem;
+  font-size: .9rem;
+  color: #a1a1a1;
+  text-transform: capitalize;
+}
+
+div{
+  display: block;
+}
+
+section{
+  width: 85%;
+  margin: 0 auto;
+  padding: 3rem 0;
+}
+
+button, input{
+  border: none;
+  outline: none;
+}
+
+
+/* NAVIGATION SECTION */
+.nav{
+  display: block;
+  position: fixed;
+  z-index: 100;
+  width: 100vw;
+  background-color: #054fb3;
+}
+
+.nav section{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 0;
+}
+
+.logo h3{
+  font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  font-size: 1.5em;
+  color: white;
+}
+
+.logo h3 span{
+  color: orange;
+}
+
+.nav-menu, .nav-menu ul{
+  display: flex;
+  justify-content: center; 
+  align-items: center;
+  gap: 1rem;
+}
+
+.nav-menu ul li{
+  color: #aac4e6 ;
+  transition: all .3s ease;
+}
+
+.nav-menu ul li:hover{
+  color: #fff ;
+}
+
+.nav-menu ul .active{
+  color: white;
+}
+
+.nav-menu ul li, .primary-btn{
+  cursor: pointer;
+}
+
+
+.navmenu ul li a{
+  text-decoration: none;
+  color: #aac4e6 ;
+}
+
+.primary-btn, .secondary-btn{
+  padding: .8em 1.3rem;
+  color: #054fb3 ;
+  background-color: #fff;
+  border-radius: 5px;
+  font-weight:520 ;
+  text-transform: capitalize;
+  transition: all .5s ease;
+}
+
+.secondary-btn{
+  color: white;
+  background-color: #054fb3;
+  border: 1px solid white;
+}
+
+.primary-btn:hover, .secondary-btn:hover{
+  text-decoration: underline;
+}
+
+.mobile-nav{
+  display: none;
+  color: #fff;
+  font-size: large;
+  padding: .2em .4em;
+  transition: .5s ease-in-out;
+}
+
+.mobile-nav:hover{
+  border: 1px solid white;
+}
+
+
+.mobile-nav-view{
+  background-color: white;
+  z-index: 1000;
+  width: 100vw;
+  height: 100vh;
+  display: none;
+}
+
+.mobile-nav-view ul{
+  width: 100%;
+  text-align: center;
+  padding-top: 3rem;
+}
+
+.mobile-nav-view ul li{
+  width: 100%;
+  padding: 1rem;
+  margin: 1rem auto;
+  font-weight: 500;
+  border-bottom: 1px solid rgba(0, 10, 200, .1);
+}
+
+.mobile-nav-view ul li a{
+  text-decoration: none;
+  color: #054fb3;
+  width: 100%;
+  padding: 1rem;
+}
+
+.mobile-nav-view ul li a:hover{
+  text-decoration: underline;
+}
+
+
+.fa-close{
+  color: rgb(252, 21, 21);
+}
+
+
+.main{
+  padding: 3rem 0 0;
+  position: relative;
+  min-height: 80vh;
+  background-color: #054fb3;
+}
+
+.main section{
+  padding: 3rem 0 0;
+}
+
+.grid-container{
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-gap: 1rem;
+}
+
+.main-text{
+  position: relative;
+  color: white;
+  align-self: center;
+}
+
+.headline{
+  font-size: 3rem;
+  font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+.main-text p{
+  margin: 1.1rem 0;
+  line-height: 1.5rem;
+}
+
+.button-container{
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.main-text .button-container .line{
+  position: absolute;
+  margin-top: 1rem;
+  height: 100px;
+  right: 0;
+  object-fit: contain;
+}
+
+.main-img{
+  position: relative;
+  height: 600px;
+  background-image: url('./assets/hero.webp');
+  background-position: center;
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+
+.main-img div img{
+  object-fit: contain;
+}
+
+.main-img .vscode{
+  width: 70px;
+  position: absolute;
+  top: 5% ;
+  right: 10%;
+}
+
+.main-img .wordpress{
+    width: 60px;
+    height: 60px;
+    background-color: white;
+    border-radius: 4px;
+    padding:10px ;
+    position: absolute;
+    top: 85% ;
+    right: 0;
+}
+
+.main-img .figma{
+  width: 70px;
+  position: absolute;
+  bottom: 20%;
+  background-color: white;
+  border-radius: 4px;
+  padding: 10px 1rem;
+}
+
+.main-img .light-icon{
+  position: absolute;
+  top: 2%;
+  right: 70%;
+}
+
+.main-img .green-icon{
+  position: absolute;
+  top: 39%;
+  right: 78%;
+  width: 20px;
+  height: 20px;
+}
+
+.main-img .triangle-icon{
+  position: absolute;
+  top: 43%;
+  right: 5%;
+}
+
+
+
+.course-section{
+  background-color: #fff;
+  padding: 4rem 0;
+  position: relative;
+}
+
+.course-section section{
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-gap: 1rem;
+  place-items: center;
+}
+
+.course-header{
+  display: flex;
+  align-items: flex-start;
+  position: relative;
+}
+
+.course-header img{
+  width: 40px;
+  position: absolute;
+  top: -60%;
+  left: -5%;
+  object-fit: contain;
+  border: none;
+}
+
+.course-text p{
+  max-width: 500px;
+}
+
+.course-offers{
+  max-width: 460px;
+  margin: 2rem 0;
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  flex-wrap: wrap;
+}
+
+.course-offers div{
+  min-width: 160px;
+  padding: .2rem 3rem .2rem 1rem;
+  background-color: lightgray;
+  border-radius: 8px;
+  color: #000f24;
+  font-size: 1rem;
+  font-weight: 600;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  gap: 1rem;
+  text-transform: capitalize;
+}
+
+.course-offers div i{
+  padding: .2em .4em;
+}
+
+
+.course-img-area{
+  position: relative;
+}
+
+.course-img{
+  width: 100%;
+  position: relative;
+  display: flex;
+  justify-content: flex-end;
+}
+
+.course-img img{
+  border: 4px solid #58c;
+  border-radius: 24px;
+  height: 400px;
+  max-width: 520px;
+}
+
+.course-overlay{
+  position: absolute;
+  top: 70%;
+  left: -10%;
+}
+
+.course-overlay img{
+  border: 4px solid #58c;
+  border-radius: 24px;
+  object-fit: contain;
+}
+
+
+.offers{
+  position: relative;
+  padding: 2rem;
+}
+
+.offers section{
+  display: grid;
+  grid-gap: 2rem;
+  grid-template-columns: 1fr 1fr;
+  place-items: center;
+}
+
+.part1 img{
+  object-fit: contain;
+  width: 100%;
+  border-radius: 10px;
+  margin-top: 1rem;
+}
+
+ul{
+  list-style: none;
+}
+
+.offer-grid{
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-gap: 1.5rem;
+}
+
+.offer-grid .article{
+  background-color: lightgray;
+  padding: 2rem 1rem;
+  border-radius: 10px;
+}
+
+.article span{
+  padding: 10px;
+  display: flex;
+  align-items: center;
+  width: fit-content;
+  border-radius: 4px;
+}
+
+.article h6{
+  margin: 1rem 0;
+  text-transform: capitalize;
+  font-size: 1.2rem;
+}
+
+
+.popular{
+  padding: 4rem;
+  position: relative;
+}
+
+.center, .flex{
+  display: flex;
+  align-items: center;
+}
+
+.center{
+  flex-direction: column;
+  justify-content: center;
+  gap: 1rem;
+  text-align: center;
+  max-width:800px;
+  margin: 0 auto;
+}
+
+.button-container{
+  display: flex;
+  align-items: center;
+}
+
+.popular-container{
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
+  flex-wrap: wrap;
+  place-items: center;
+  margin-top: 3rem;
+}
+
+.popular .card{
+  background: ghostwhite;
+  width: 320px;
+  border-radius: 10px;
+  padding: 1rem;
+  text-transform: capitalize;
+}
+
+.popular .card, .space-between{
+  margin: 10px 0;
+}
+
+.space-between{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+}
+
+.popular .card .tag{
+  font-size: .7rem;
+  color: #054fb3;
+  background-color: #88b9fc;
+  padding: 4px 8px;
+  border-radius: 16px;
+}
+
+.flex{
+  gap: 10px;
+}
+
+.popular .card p{
+  font-size: .7rem;
+}
+
+.popular .card svg{
+  color: #a1a1a1;
+}
+
+.tophead{
+  font-weight: 700;
+  font-size: 1rem;
+  text-transform: capitalize;
+}
+
+.popular .card .price{
+  color: #054fb3;
+  font-weight: 700;
+}
+
+
+.connect{
+  padding: 4rem 0;
+  background-color: #054fb3;
+  position: relative;
+  color: white;
+}
+
+.coonect .center{
+  max-width: 900px;
+}
+
+.connect h5{
+  text-transform: uppercase;
+}
+
+.connect h4{
+  text-transform: none;
+}
+
+.connect p{
+  text-transform: capitalize;
+  color: #fff;
+}
+
+.connect-image{
+  margin-top: 2rem;
+  position: relative;
+}
+
+.connect .connect-image div{
+  position: absolute;
+  width: 50px;
+}
+
+.connect .connect-image div img{
+  object-fit: contain;
+}
+
+.connect .connect-image .item-1{
+  top: 20%;
+  left: 5;
+}
+
+.connect .connect-image .item-2{
+  top: 20%;
+  left: 30%;
+}
+
+.connect .connect-image .item-3{
+  top: 25%;
+  left: 50%;
+}
+
+.connect .connect-image .item-4{
+  top: 15%;
+  left: 70%;
+}
+
+.connect .connect-image .item-5{
+  top: 50%;
+  left: 20%;
+}
+
+
+.connect .connect-image .item-6{
+  top: 46%;
+  left: 40%;
+}
+
+.connect .connect-image .item-7{
+  top: 55%;
+  left: 70%;
+}
+
+.connect .connect-image .item-8{
+  top: 50%;
+  left: 90%;
+}
+
+
+.connect .connect-image .item-9{
+  top: 70%;
+  left: 60%;
+}
+
+.connect .connect-image .item-10{
+  top: 70%;
+  left: 30%;
+}
+
+
+
+.faq{
+  min-height: 100vh;
+  position: relative;
+  padding: 2rem 0;
+}
+
+.faq p{
+  margin-top: 10px;
+  transition: all 3s ease;
+}
+
+.faq section{
+  max-width: 800px;
+  margin: 4rem auto 2rem;
+}
+
+.faq .question{
+  border-bottom: #eaeaea;
+  padding: 1.5rem 0;
+  overflow: hidden;
+}
+
+.faq .space-between{
+  cursor: pointer;
+}
+
+.faq h4{
+  text-transform: capitalize;
+  font-weight: 700;
+}
+
+.faq button{
+  font-size: 1.4rem;
+  font-weight: 700;
+  color: #111;
+}
+
+
+
+
+footer{
+  background-color: #000f24;
+  color: #fff;
+  padding: 2rem 0;
+}
+
+footer .four-section{
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-gap: 2rem;
+  margin-top: 3rem;
+}
+
+footer .foot{
+  width: 300px;
+}
+
+footer .foot-logo{
+  width: 250px;
+}
+
+.logo h4{
+  font-size: 2rem;
+}
+
+footer p{
+  text-transform: capitalize;
+  color: #fff;
+  font-size: .8rem;
+}
+
+footer .button-container{
+  margin-top: 1rem;
+}
+
+.button-container{
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+footer .links{
+  width: 180px;
+}
+
+footer li{
+  margin-bottom: 1rem;
+  text-transform: capitalize;
+}
+
+
+footer .form-input{
+  height: 35px;
+  display: flex;
+  align-items: center;
+}
+
+footer .form-input input{
+  padding: 10px;
+  height: 100%;
+  background-color: #2a2a2b;
+  color: #fff;
+  border: 1px solid #054fb3;
+}
+
+footer .form-input button{
+  border: none;
+  height: 100%;
+  border-radius: 0 8px 8px 0;
+  font-size: .7rem;
+  padding: 10px;
+}
+
+.tophead{
+  font-size: 1.5rem;
+  font-weight: 700;
+}
+
+
+
+
+/* This makes it responsive on mobile phones */
+@media only screen and (max-width:700px){
+
+/* NAVIGATION SECTION */
+.logo h3{
+  font-size: 1.3em;
+}
+
+.nav-menu, .nav-menu ul{
+  display: none;
+}
+
+.mobile-nav{
+  display: block;
+}
+
+.mobile-nav-view{
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+}
+
+
+
+.main section{
+  width: 90%;
+  padding-top: 4rem;
+}
+
+.grid-container{
+  grid-template-columns: 1fr;
+}
+
+.headline{
+  font-size: 1.8rem;
+}
+
+.main-text p{
+  font-size: .8rem;
+}
+
+.main-text .button-container .line{
+  height: 50px;
+}
+
+.main-img .vscode{
+  width: 40px;
+}
+
+.main-img .wordpress{
+    width: 40px;
+    height: 40px;
+    padding:5px;
+}
+
+.main-img .figma{
+  width: 35px;
+  padding: 4px .5rem;
+}
+
+.main-img .light-icon{
+  width: 80px;
+  left: 3%;
+}
+
+.main-img .green-icon{
+  left: 10%;
+}
+
+.main-img .triangle-icon{
+  width: 30px;
+}
+
+
+
+
+.course-section section{
+  grid-template-columns: 1fr;
+}
+
+.course-header img{
+  width: 30px;
+}
+
+.course-text p{
+  max-width: 500px;
+}
+
+.course-offers{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.course-offers div{
+  height: 50px;
+  padding: 0rem 2rem 0rem .5rem;
+}
+
+.course-offers div i{
+  padding: 0;
+  font-size: .7rem;
+}
+
+.course-offers div p{
+  font-size: .8rem;
+}
+
+.course-img-area{
+  width: 70%;
+  height: 220px;
+}
+
+.course-img{
+  width: 100%;
+  height: 100%;
+ }
+
+.course-img img{
+  height: 100%;
+}
+
+.course-overlay img{
+  width: 150px;
+}
+
+
+
+.offers section{
+  grid-template-columns: 1fr;
+  width: 100%;
+}
+
+.part1 p{
+  text-align: center;
+}
+
+.offer-grid .article{
+  padding: 1rem 1rem;
+}
+
+.article p{
+  font-size: .8rem;
+}
+
+.article span{
+  padding: 8px;
+}
+
+.article h6{
+  font-size: 1.1rem;
+}
+
+
+
+
+.popular section{
+  width: 95%;
+}
+
+.center p{
+  font-size: .8rem;
+}
+
+.button-container button {
+  font-size: .8rem;
+}
+
+.popular .card{
+  width: 300px;
+  padding: .8rem;
+}
+
+.popular .card, .space-between{
+  margin: 5px 0;
+}
+
+.popular .card .tag{
+  font-size: .6rem;
+}
+
+.flex{
+  gap: 8px;
+}
+
+.popular .card p{
+  font-size: .6rem;
+}
+
+.tophead{
+  font-size: .8rem;
+}
+
+
+
+
+.connect{
+  padding: 3rem 0;
+}
+
+.connect section{
+  width: 92%;
+}
+
+
+.connect h5{
+  font-size: .7rem;
+  margin-bottom: .4rem;
+}
+
+.connect h4{
+  font-size: 1.5rem;
+  margin: .7rem 0;
+}
+
+
+.connect .connect-image div{
+  width: 30px;
+}
+
+
+
+.faq p{
+  margin-top: 8px;
+}
+
+.faq .question p{
+  font-size: .8rem;
+}
+
+.faq h4{
+  font-size: .9rem;
+}
+
+.faq button{
+  font-size: .9rem;
+}
+
+
+
+footer{
+  padding: 1.5rem 0;
+}
+
+
+footer .four-section{
+  grid-template-columns: 1fr;
+  grid-gap: 2rem;
+}
+
+footer .foot-logo{
+  width: 90%;
+}
+
+.logo h4{
+  font-size: 1.8rem;
+}
+
+footer .links{
+  width: 90%;
+}
+
+footer .links h4{
+  font-size: 1.1rem;
+}
+
+footer li{
+  font-size: .8rem;
+}
+
+footer .form-input input{
+  padding: 8px;
+}
+
+footer .form-input button{
+  padding: 8px;
+}
+
+.tophead{
+  font-size: 1.2rem;
+}
+
+
+
+
+
 }
