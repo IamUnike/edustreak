@@ -14,10 +14,10 @@ const Main = () => {
                 <div className="grid-container">
                     
                     <div className="main-text">
-                        <h4 className='headline'> Grow Your Skills To Advance Your Career Path </h4>
-                        <p> Build Your Future With Our Quality Education. The Best And Largest All-In-One Online Tutoring Platform In The World </p>
+                        <h4 className='headline' data-aos='fade-up' data-aos-duration='500'> Grow Your Skills To Advance Your Career Path </h4>
+                        <p data-aos='fade-up' data-aos-duration='700'> Build Your Future With Our Quality Education. The Best And Largest All-In-One Online Tutoring Platform In The World </p>
                         
-                        <div className="button-container">
+                        <div className="button-container" data-aos='zoom-in' data-aos-duration='700'>
                             <button className="secondary-btn"> Get Started Now </button>
                             <button className="primary-btn"> Enroll now </button>
 
@@ -27,8 +27,8 @@ const Main = () => {
                         </div>
                     </div>
 
-                    <div className="main-img">
-                        <div className="vscode">
+                    <div className="main-img" data-aos='zoom-in' data-aos-duration='500'>
+                        <div className="vscode" >
                             <img src={vscode} alt="" loading="lazy" />
                         </div>
 

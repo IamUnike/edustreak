@@ -26,6 +26,11 @@ li{
   cursor: pointer;
 }
 
+a{
+  color: #fff;
+  text-decoration: none;
+}
+
 
 p{
   font-family: Arial, Helvetica, sans-serif;
@@ -173,7 +178,6 @@ button, input{
 .mobile-nav-view ul li a:hover{
   text-decoration: underline;
 }
-
 
 .fa-close{
   color: rgb(252, 21, 21);

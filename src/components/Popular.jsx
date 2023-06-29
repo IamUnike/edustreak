@@ -5,14 +5,14 @@ const Popular = () => {
     return ( 
         <div className="popular" id='courses'>
             <section>
-                <div className="center">
+                <div className="center" data-aos='fade-up' data-aos-duration='500'>
                     <h4 className="headline"> Browse our popular courses </h4>
 
                     <p> high-defination video is video of higher resolution and quality than standard definition. while there’s no standard meaning for high definition, generally any standard video image </p>
                 </div>
                 <br />
 
-                <div className="center">
+                <div className="center" data-aos='fade-up' data-aos-duration='700'>
                     <div className="button-container">
                         <button className="primary-btn"> All Categories </button>
                         <button> Design </button>
@@ -22,7 +22,7 @@ const Popular = () => {
                 </div>
 
                 <div className="popular-container">
-                    <article className="card">
+                    <article className="card" data-aos='zoom-in' data-aos-duration='500'>
                         <div>
                             <img src={ux} alt="" loading='lazy' />
                         </div>
@@ -68,7 +68,7 @@ const Popular = () => {
                         </div>
                     </article>
 
-                    <article className="card">
+                    <article className="card" data-aos='zoom-in' data-aos-duration='600'>
                         <div>
                             <img src={ux} alt="" loading='lazy' />
                         </div>
@@ -114,7 +114,7 @@ const Popular = () => {
                         </div>
                     </article>
 
-                    <article className="card">
+                    <article className="card" data-aos='zoom-in' data-aos-duration='700'>
                         <div>
                             <img src={ux} alt="" loading='lazy' />
                         </div>
@@ -160,7 +160,7 @@ const Popular = () => {
                         </div>
                     </article>
 
-                    <article className="card">
+                    <article className="card" data-aos='zoom-in' data-aos-duration='800'>
                         <div>
                             <img src={ux} alt="" loading='lazy' />
                         </div>
@@ -208,7 +208,7 @@ const Popular = () => {
                     
                 </div>
 
-                <div class="center">
+                <div class="center" data-aos='zoom-in' data-aos-duration='500'>
                     <br /><br />
                     <button class="secondary-btn">explore all courses</button>
                 </div>

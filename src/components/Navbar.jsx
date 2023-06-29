@@ -9,13 +9,13 @@ const Navbar = () => {
             <section className="header">
                 
                 {/* header logo */}
-                <div className="logo">
-                    <h3> Edu<span>Streak </span> </h3>
+                <div className="logo" >
+                    <h3 data-aos='fade-down' data-aos-duration='500'> Edu<span>Streak </span> </h3>
                 </div>
 
                 {/* navigation menu */}
                 <div className="nav-menu">
-                    <ul>
+                    <ul data-aos='fade-down' data-aos-duration='700'>
                         <li className="active"><a href="#"> Home </a></li>
                         <li><a href="#faq">About Us </a></li>
                         <li><a href="#courses"> Courses </a> </li>
@@ -27,7 +27,7 @@ const Navbar = () => {
                 </div>
 
                 {/* mobile navigation menu */}
-                <div className="mobile-nav" onClick={() => setNavClick(!navClick) }>
+                <div className="mobile-nav" onClick={() => setNavClick(!navClick) } data-aos='fade-down' data-aos-duration='700'>
                     {!navClick ? <i className="fa fa-bars"> </i> : <i className="fa fa-close"> </i>}
                 </div>
 

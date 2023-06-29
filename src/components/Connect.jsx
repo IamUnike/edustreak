@@ -7,13 +7,13 @@ const Connect = () => {
             <section>
                 <div class="center">
                     
-                    <div>
+                    <div data-aos='fade-up' data-aos-duration='500'>
                         <h5 class="upper">join our community</h5>
                         <h4 class="headline">Are you  ready to connect with the future talent of the tech world</h4>
                         <p>meet up with other techstars and grow together</p>
                     </div>
                     
-                    <div class="connect-image">
+                    <div class="connect-image" data-aos='zoom-in' data-aos-duration='700'>
                         <img src={map} alt="map" loading="lazy" width="983" height="455" decoding="async"  />
                         
                         <div class="item-1">
@@ -59,7 +59,7 @@ const Connect = () => {
                     </div>
                     <br />
 
-                    <button class="primary-btn">join our community</button></div></section></div>
+                    <button class="primary-btn" data-aos='zoom-in' data-aos-duration='700'>join our community</button></div></section></div>
      );
 }
  

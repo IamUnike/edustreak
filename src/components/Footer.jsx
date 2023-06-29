@@ -2,7 +2,7 @@ const Footer = () => {
     return ( 
         <footer className="footer">
             <section>
-                <div class="four-section">
+                <div class="four-section" data-aos='zoom-in' data-aos-duration='500'>
                     <div class="foot foot-logo">
                         <div className="logo">
                         <h3> Edu<span>Streak </span> </h3>

@@ -3,13 +3,13 @@ const Faq = () => {
         <div className="faq" id="faq">
             <section>
                 
-                <div class="center">
+                <div class="center" data-aos='fade-up' data-aos-duration='500'>
                     <h4 class="headline">frequently asked questions</h4>
                     <p>high-defination video is video of higher resolution and quality than standard definition. while there’s no standard meaning for high definition, generally any standard video image</p>
                 </div>
                 
                 <div class="faq-section">
-                    <article class="question">
+                    <article class="question" data-aos='fade-up' data-aos-duration='500'>
                         <div class="space-between">
                             <h4 class="blue">is there a free trial available?</h4>
                             <div>
@@ -25,7 +25,7 @@ const Faq = () => {
                         </div>
                     </article>
                     
-                    <article class="question">
+                    <article class="question" data-aos='fade-up' data-aos-duration='600'>
                         <div class="space-between">
                             <h4 class="">can i change my plan later?</h4>
                             
@@ -40,7 +40,7 @@ const Faq = () => {
                         <div></div>
                     </article>
 
-                    <article class="question">
+                    <article class="question" data-aos='fade-up' data-aos-duration='700'>
                         <div class="space-between">
                             <h4 class="">can i change my plan later?</h4>
                             
@@ -55,7 +55,7 @@ const Faq = () => {
                         <div></div>
                     </article>
 
-                    <article class="question">
+                    <article class="question" data-aos='fade-up' data-aos-duration='800'>
                         <div class="space-between">
                             <h4 class="">can i change my plan later?</h4>
                             
@@ -70,7 +70,7 @@ const Faq = () => {
                         <div></div>
                     </article>
 
-                    <article class="question">
+                    <article class="question" data-aos='fade-up' data-aos-duration='900'>
                         <div class="space-between">
                             <h4 class="">can i change my plan later?</h4>
                             
@@ -85,7 +85,7 @@ const Faq = () => {
                         <div></div>
                     </article>
 
-                    <article class="question">
+                    <article class="question" data-aos='fade-up' data-aos-duration='1000'>
                         <div class="space-between">
                             <h4 class="">can i change my plan later?</h4>
                             
